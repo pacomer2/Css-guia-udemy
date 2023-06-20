@@ -3,18 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/curso_udemy/NORMALIZE/normalize.css">
+  <link rel="stylesheet" href="/curso_udemy/css/style.css">
   <title>Tiendas Muebles</title>
 </head>
 <body>
-  <header><h1>Tienda Mueble</h1></header>
-  <nav>
-    <a href="/curso_udemy/index.html">Inicio</a>
-  <a href="/curso_udemy/index.html">Nosotros</a>
-  <a href="/curso_udemy/index.html">Tienda</a>
-  <a href="/curso_udemy/index.html">Blog</a>
-  <a href="/curso_udemy/index.html">Galería</a>
-  <a href="/curso_udemy/index.html">Contactos</a>
-</nav>
+  <header class="nombre-sitio"><h1>Tienda <span>Muebles</span></h1></header>
+  <div class="contenedor-nav">
+    <nav class="nav-principal contenedor">
+      <a href="/curso_udemy/index.html">Inicio</a>
+      <a href="/curso_udemy/index.html">Nosotros</a>
+      <a href="/curso_udemy/index.html">Tienda</a>
+      <a href="/curso_udemy/index.html">Blog</a>
+      <a href="/curso_udemy/index.html">Galería</a>
+      <a href="/curso_udemy/index.html">Contactos</a>
+    </nav>
+  </div><!--contenedor-nav para utilizar la linea arriba del nav y no se rompa -->
+  
+<div class="hero"></div><!--hero css -->
+
 <section>
   <h2>Categoría de Productos</h2>
   <div>
@@ -31,12 +38,14 @@
   </div>
   
 </section>
-<section>
+<section class="sobre-nosotros">
+
   <div>
     <h2>Sobre Nosotros</h2>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique accusamus excepturi sit doloremque, vel debitis corporis quibusdam dicta delectus aut impedit maiores iusto deserunt! Odit voluptate necessitatibus voluptates ipsa dolorem?</p>
   </div>
-</section>
+</section><!--sobre-nosotros -->
+
   <main>
     <h2>Nuestros Productos</h2>
      <div class="container">
