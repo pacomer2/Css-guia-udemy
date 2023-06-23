@@ -39,7 +39,10 @@ border-color: #e1e1e1;
   border-width: 1px;
 }
 .nav-principal{
+  width: 1200px;
   padding: 20px 0 ;
+  display: flex;
+  justify-content: space-around;
 }
 .hero {
   background-image: url(../img/principal.jpg);
