@@ -1,46 +1,51 @@
- html {
+html {
   /* margin: 0;
   padding: 0; */
   box-sizing: border-box;
- }
- *, *:before, *:after {
+}
+*,
+*:before,
+*:after {
   box-sizing: inherit;
- }
- /*Globales*/
- a {
+}
+
+/*Globales*/
+img {
+  max-width: 100%;
+}
+a {
   text-decoration: none;
   color: black;
- }
- .contenedor {
-  /* display: inline-block; */
-  max-width: 1200px;
+}
+/*nos permite centrar el contenido*/
+.cate
+
+.contenedor {
+ max-width: 1200px;
   margin: 0 auto;
 
- 
-  /* margin-inline: auto; */
- }
- /*header y navegacion*/
- nav{
+}
+/*header y navegacion*/
+nav {
   text-align: center;
- }
- 
-.nombre-sitio{
+}
+
+.nombre-sitio {
   margin: 40px;
   padding: 40px;
   text-align: center;
 }
 
-.nombre-sitio  span {
-    color:  #64b6e5;
+.nombre-sitio span {
+  color: #64b6e5;
 }
 .contenedor-nav {
-border-color: #e1e1e1;
+  border-color: #e1e1e1;
   border-top-style: solid;
   border-width: 1px;
 }
-.nav-principal{
-  
-  padding: 20px 0 ;
+.nav-principal {
+  padding: 20px 0;
   display: flex;
   justify-content: space-around;
 }
@@ -52,13 +57,20 @@ border-color: #e1e1e1;
   height: 550px;
 }
 
-
 /*BOX MODEL*/
 
 .sobre-nosotros {
-background-color: red;
+  background-color: red;
   padding: 20px;
   width: 200px;
   box-sizing: border-box;
 }
 /*display block in line*/
+
+/*categorias*/
+.listado-categoria {
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+ gap: 20px;
+}
+
