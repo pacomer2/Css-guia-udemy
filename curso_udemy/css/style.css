@@ -10,20 +10,23 @@ html {
 }
 
 /*Globales*/
+
+
 img {
   max-width: 100%;
+  vertical-align:top;
+  /*quita los margenes a la img*/
+  display: block;
 }
 a {
   text-decoration: none;
   color: black;
 }
 /*nos permite centrar el contenido*/
-.cate
 
 .contenedor {
- max-width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
-
 }
 /*header y navegacion*/
 nav {
@@ -68,9 +71,23 @@ nav {
 /*display block in line*/
 
 /*categorias*/
+.categorias h2{
+  text-align: center;
+}
+.categoria a{
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+.categoria a:hover{
+background-color: #037bc0 ;
+color: #fff;
+font-size: 25px;
+border-bottom-right-radius: 10px ;
+}
 .listado-categoria {
   display: grid;
-  grid-template-columns: repeat(3 ,1fr);
- gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
-
