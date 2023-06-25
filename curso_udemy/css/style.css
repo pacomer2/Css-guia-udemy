@@ -46,6 +46,20 @@ a {
   max-width: 200rem;
   margin: 0 auto;
 }
+.btn{
+ color: #fff;
+  background-color: #8cbc00;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  /* width: 90%; */
+  transition:background-color .4s ease-out ;
+}
+.btn:hover {
+  background-color: #769c02;
+}
+
 /*Utilidades*/
 .text-center {
   text-align: center;
@@ -60,14 +74,12 @@ header{
   font-size: 3rem;
   
 }
-
 .nombre-sitio {
   margin-top: 4rem ;
   margin-top: 4rem;
   text-align: center;
   font-size: 4rem;
 }
-
 .nombre-sitio span {
   color: #64b6e5;
 }
@@ -95,8 +107,6 @@ header{
 /*display block in line*/
 
 /*categorias*/
-
-
 .categoria a{
   display: block;
   text-align: center;
@@ -145,6 +155,7 @@ border-bottom-right-radius: 1rem ;
  .texto-producto{
   text-align: center;
   color: #fff;
+  padding: 2rem;
  }
  .texto-producto h3{
   margin: 0;
@@ -157,6 +168,4 @@ border-bottom-right-radius: 1rem ;
   font-size: 2.8rem;
   font-weight: 900;
  }
- .texto-producto a{
-
- }
+ 
