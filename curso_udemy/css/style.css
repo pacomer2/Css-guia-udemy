@@ -9,17 +9,33 @@ html {
 *:after {
   box-sizing: inherit;
 }
-/*Globales*/
+
 body{
   font-family: "raleway",sans-serif;
   /*para que la base sea de 16px*/
   font-size: 1.6rem;
+  line-height: 1.5;
   
 }
+/*Globales*/
 img {
   max-width: 100%;
    /*quita los margenes a la img*/
   display: block;
+}
+
+h1, h2, h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 0 5rem 0;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
 }
 a {
   text-decoration: none;
@@ -69,16 +85,13 @@ header{
 
 /*BOX MODEL*/
 
-.sobre-nosotros {
-  background-color: red;
-  padding: 2rem;
-  width: 20rem;
-  box-sizing: border-box;
-}
+
 /*display block in line*/
 
 /*categorias*/
+
 .categorias h2{
+  padding-top: 5rem;
   text-align: center;
 }
 .categoria a{
@@ -98,3 +111,16 @@ border-bottom-right-radius: 1rem ;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+/*sobre-nosotros*/
+.sobre-nosotros{
+  background-image: linear-gradient(to right, transparent 50%,#037bc0 50%,#037bc0 100%), url(../img/nosotros.jpg);
+  padding: 20rem 0;
+  background-position: left center;
+  background-repeat: no-repeat;
+  /*el linear-garadient tiene un crecimiento del 100%
+  y el background-size tambien, lo que hacia la imagen muy grande. por eso se pone la coma*/
+  background-size: 100%, 180rem;
+
+
+}
+
