@@ -121,6 +121,15 @@ border-bottom-right-radius: 1rem ;
   y el background-size tambien, lo que hacia la imagen muy grande. por eso se pone la coma*/
   background-size: 100%, 180rem;
 
+}
+.sobre-nosotros-grid{
+  display: flex;
+  justify-content: flex-end;
 
 }
-
+.texto-nosotros {
+    flex-basis: 50% ;
+    padding-left: 10rem;
+    color: white;
+}
+ 
