@@ -92,7 +92,7 @@ header{
 .nav-principal {
   padding: 2rem 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .hero {
   background-image: url(../img/principal.jpg);
@@ -233,4 +233,25 @@ flex: 1 ;
   margin-top: 2rem;
 
 }
+ /*Nosotros*/
+.contenido-nosotros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  
+  column-gap: 4rem;
+}
+.informacion-nosotros{
+  font-size: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+  .informacion-nosotros p{
+    margin-top: 2rem;
+  }
+
+
+
  
