@@ -64,9 +64,10 @@ a {
 /*Utilidades*/
 .text-center {
   text-align: center;
-  
+  }
+.max-width-30{
+  max-width: 30rem;
 }
-
 /*header y navegacion*/
 /* nav {
   text-align: center;
@@ -81,7 +82,7 @@ header{
   text-align: center;
   font-size: 4rem;
 }
-.nombre-sitio span {
+span {
   color: #64b6e5;
 }
 .contenedor-nav {
@@ -251,7 +252,27 @@ flex: 1 ;
   .informacion-nosotros p{
     margin-top: 2rem;
   }
-
-
-
- 
+.contenedor-blog{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 4rem;
+}
+.entrada {
+  border-bottom:2px solid #e1e1e1 ;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+.entrada:last-of-type {
+  border: none;
+}
+.entrada-meta{
+  display: flex;
+  justify-content:  space-between;
+}
+.entrada-meta{
+  font-weight: 900;
+}
+.contenido-entrada-blog{
+  width: 100rem;
+  margin: 0 auto;
+}
