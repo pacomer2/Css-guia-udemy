@@ -13,7 +13,7 @@ html {
 body{
   font-family: "raleway",sans-serif;
   /*para que la base sea de 16px*/
-  font-size: 1.6rem;
+  font-size: 3rem;
   line-height: 1.5;
   
 }
@@ -92,6 +92,7 @@ span {
  
 }
 .nav-principal {
+  font-size: 4rem;
   padding: 2rem 0;
   display: flex;
   justify-content: space-between;
