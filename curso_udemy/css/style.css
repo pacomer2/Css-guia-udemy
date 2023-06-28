@@ -51,6 +51,7 @@ a {
  margin-top: 2rem;
   background-color: #8cbc00;
   display: block;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 900;
   padding: 1rem;
@@ -273,6 +274,21 @@ flex: 1 ;
   font-weight: 900;
 }
 .contenido-entrada-blog{
-  width: 100rem;
+  width: 90rem;
   margin: 0 auto;
+}
+.galeria{
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+}
+.galeria img {
+  height: 40rem;
+  width: 65rem;
+  object-fit: cover;
 }
