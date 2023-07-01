@@ -293,3 +293,38 @@ flex: 1 ;
   width: 65rem;
   object-fit: cover;
 }
+/*FORMULARIO*/
+.formulario{
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.formulario fieldset{
+  border: 1px solid black;
+  /*margin-bottom: 2rem;*/
+  /*Aqui no ha funcionado el margin bottom*/
+  
+  
+
+}
+.formulario div {
+  margin-bottom: 2rem;
+}
+.formulario legend{
+  background-color: #005485;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+.campo{
+  display: flex;
+  /* width: 100%; */
+  margin-bottom: 2rem;
+}
+.campo label{
+flex-basis: 10rem;
+min-width: 20rem;
+}
