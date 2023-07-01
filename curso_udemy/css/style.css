@@ -57,9 +57,11 @@ a {
   padding: 1rem;
   /* width: 90%; */
   transition:background-color .4s ease-out ;
+  border: none;
 }
 .btn:hover {
   background-color: #769c02;
+  cursor: pointer;
 }
 
 /*Utilidades*/
@@ -317,14 +319,23 @@ flex: 1 ;
   text-transform: uppercase;
   font-weight: 900;
   padding: 1rem;
-  margin-bottom: 4rem;
+  margin: 4rem 0;
 }
 .campo{
   display: flex;
   /* width: 100%; */
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .campo label{
 flex-basis: 10rem;
 min-width: 20rem;
+}
+/* .campo .input{
+flex: 1;
+} */
+
+.campo .input:not([type="radio"]){
+flex: 1;
+border: 1px solid #e1e1e1;
+padding: 1rem;
 }
