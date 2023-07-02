@@ -1,0 +1,194 @@
+:root {
+    --azul: #0071b7;
+    --blanco: #FFF;
+    --naranja: #ff4f1e;
+}
+html {
+    font-size: 62.5%; /** 1REM = 10pX **/
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+
+body {
+    background-color: var(--azul);
+    font-family:  'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+
+h1, h2 {
+    color: var(--blanco);
+    text-align: center;
+    margin: 5rem 0;
+    padding: 1rem;
+}
+.caja-curso {
+    background-color: var(--naranja);
+    text-align: center;
+    color: var(--blanco);
+    padding: 5rem;
+
+}
+.caja-curso h1 {
+    margin: 0;
+}
+.caja-curso p {
+    font-size: 2.4rem;
+}
+.caja-curso a {
+    font-size: 2.4rem;
+    padding: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 0;
+}
+
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.box {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border: 1rem solid #bb2b03;
+}
+
+.contenedor > div {
+    background-color: var(--blanco);
+    padding: 5rem;
+}
+/*1*/
+/*display flex solo va aplicar al primer nivel de hijos  aqui hay tres*/
+.d-flex{
+    display: flex;
+}
+/*2*/
+.d-flex-2{
+    display: flex;
+    flex-direction: column;
+}
+/*3*/
+.d-flex-3{
+    display: flex;
+    justify-content: flex-start-;
+}
+.d-flex-4 {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+
+    justify-content: space-around;
+}
+.d-flex-5 {
+    display: flex;
+    height: 400px;
+
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+
+}
+.d-flex-6 {
+    display: flex;
+    /* flex-direction: column; */
+    height: 500px;
+
+    /* align-items: flex-start;
+    align-items: flex-end;
+    align-items: center; */
+    align-items: baseline;
+}
+.d-flex-7 {
+    display: flex;
+    height: 600px;
+
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+.d-flex-8 {
+    display: flex;
+}
+/*flex-basis es una propiedad que se aplica en el hijo "box". los anteriores aplican desde el padre. pero estos que son propiedades funcionan desde los hijos. funcionan muy similar a un width. con 33.3% toman todo el div y casi miden lo mismo.
+width fuerza el tamaño flex-basis es el tamaño inicial y el contenido. a partir de ahí comienza a ser flexible*/
+.d-flex-8 .box {
+     flex-basis: 33.3%;
+    flex-basis: 200px;
+}
+/*la primera y segunda caja tien un width de 200px pero la de contenido mide 300px no es que basis fuerza los 200px sino que es el valor inical. las 2 cajas se inician en 200px pero en caso como esta que tiene mas contenido comienzan a crescer. Esta es una caracteristica de flex-box. Son cajas flexibles tienden a crecer o hacerse mas pequeñas. No es como funcionan con un width porqeu si pones witdh 200px a la fuerza son 200px. flex-basis es el valor inicial,respeta el 33.3% porque no tenemos tanto contenido, no porque también como cubre el 100% del contenedor. pero cuando pones 200px, toma los 200px y requiere un poco mas porque tengo mas contenido que las otras dos. Soporta todas las unidades de medidas*/
+/* 9 */
+.d-flex-9 {
+    display: flex;
+    justify-content: space-between;
+   }
+/*va tomar todo el espacio y el contenido. lo que hace es tomar 3 columnas*/
+
+.d-flex-9 .box:nth-child(1) {
+    flex-basis: calc(50% - 1rem);
+}
+.d-flex-9 .box:nth-child(2),
+.d-flex-9 .box:nth-child(3) {
+    flex-basis: calc(25% - 1rem);
+}
+/*recientemente agregaron un soporte a GAP en flex box. y con este codigo podemos hacer un diseño de 3 columnas y su separacion*/
+/*Antiguamente para genera 3 columnas en flex-box usamos la funcion de calc()*/
+
+.d-flex-10 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.d-flex-10 .box {
+    flex-basis: 33.3%;
+}
+.d-flex-11 {
+    display: flex;
+  
+}
+
+.d-flex-11 .box:nth-child(1) {
+    flex-grow: 3;
+}
+.d-flex-11 .box:nth-child(2) {
+    flex-grow: 1.5;
+}
+.d-flex-11 .box:nth-child(3) {
+    flex-grow: 1;
+}
+/*que es flex-grow? porque las cajas no crecen hasta que les ponen un flex-grow 1? flex-grow es un factor de crecimiento. reparte equitativamente a cada caja su tamaño. Le puedes poner 20 en vez de uno y  no va cambiar nada. El factor de crecimiento va a repartir de 20 en 20 y es el mismo para todos. Porque sin flex-grow nuestro contenido no crece? porque el default del flex-grow es 0 y no hay factor de crecimiento y toma  en consideración únicamente el ancho del contenido. Si uno tiene mas contenido que el otro, entonces va ajustar la caja flexible al contenido que tenga. como funciona flex-grow? Entonces, cómo funciona Flex Grow??? en el número que tú le especifiques, aquí va a ser la cantidad flex-grow: 1; de píxeles o digamos, en la repartición qué tan equitativo o cuántos va a recibir un elemento u otro.
+El verdadero poder de flexionado se da cuando lo mezclas con diferentes flex draw en diferentes elementos.
+Bueno, una cosa es recibir los píxeles para que tomen cierto ancho, pero recuerda lo que define el ancho de un elemento en CSS son cuatro cosas:
+*/
+.d-flex-12 {
+    display: flex;
+}
+.d-flex-12 .box {
+    flex-grow: 1;
+    flex-basis: 300px;
+    flex-shrink: 1;
+
+}
+.d-flex-12 .box:nth-child(3) {
+    flex-shrink: 2;
+}
+/*Entonces le estoy diciendo que los que están como hijos en Display Flex 12 van a crecer al orden de uno, pero tienen una base de trescientos píxeles. Esa es su base, su tamaño, digamos, inicial, y a partir de ahí comienzan a crecer.Pero de qué trata el  Flex shrink?
+
+*/
+.d-flex-13 {
+    display: flex;
+    gap: 2rem;
+}
+
+.d-flex-13 .box {
+  
+    flex: 0 0 33.3% ;
+}
