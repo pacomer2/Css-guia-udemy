@@ -302,11 +302,9 @@ flex: 1 ;
 }
 .formulario fieldset{
   border: 1px solid black;
-  /*margin-bottom: 2rem;*/
+  margin-bottom: 2rem;
   /*Aqui no ha funcionado el margin bottom*/
   
-  
-
 }
 .formulario div {
   margin-bottom: 2rem;
@@ -330,7 +328,7 @@ flex: 1 ;
 flex-basis: 10rem;
 min-width: 20rem;
 }
-/* .campo .input{
+/* .campo .inpu
 flex: 1;
 } */
 
